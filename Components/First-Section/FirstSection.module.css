@@ -1,0 +1,42 @@
+.firstsection{
+    background-color: #282C33;
+    padding-left: 171px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+
+}
+.info{
+    color: white;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+}
+.span{
+    color: #C778DD;
+
+}
+.para{
+    padding-top: 20px;
+    color: #ABB2BF;
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 12px;
+}
+.contactbtn{
+    padding: 8px 16px;
+    border: 1px solid #C778DD;
+    cursor: pointer;
+}
+.contactbtn:hover{
+    background-color: #C778DD;
+    color: white;
+}
+.right img{
+    width: 250px;
+}
+.right{
+    padding-right: 171px;
+}
