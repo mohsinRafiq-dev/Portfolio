@@ -26,19 +26,19 @@ function Navbar() {
       </div>
       <div className={Style.right}>
         <button className={Style.hamburgerIcon} onClick={toggleMenu}>
-          &#9776; {/* Hamburger icon */}
+          &#9776; 
         </button>
         <div className={`${Style.menuItems} ${isOpen ? Style.open : ''}`}>
-          <a href="#home">
+          <a className={Style.element} href="#home">
             <span className={Style.span}>#</span>home
           </a>
-          <a href="#projects">
+          <a className={Style.element} href="#projects">
             <span className={Style.span}>#</span>projects
           </a>
-          <a href="#about-me">
+          <a className={Style.element} href="#about-me">
             <span className={Style.span}>#</span>about-me
           </a>
-          <a href="#contacts">
+          <a className={Style.element} href="#contacts">
             <span className={Style.span}>#</span>contacts
           </a>
           <div className={Style.socials}>

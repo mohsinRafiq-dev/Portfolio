@@ -36,7 +36,8 @@ function FirstSection() {
         <img src={Quote} alt="" />
       </div>
     </>
-  );
+  );o
+  
 }
 
 export default FirstSection;

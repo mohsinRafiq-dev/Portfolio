@@ -1,0 +1,27 @@
+#projects{
+    padding-left: 171px;
+    padding-right: 171px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#cards{
+    padding-top: 40px;
+}
+@media (max-width: 768px){
+    #projects{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        align-items: center;
+    }
+    .h1{
+        font-size: 25px;
+    }
+    #projects a{
+        font-size: 12px;
+    }
+    #cards{
+        padding-top: 40px;
+    }
+}

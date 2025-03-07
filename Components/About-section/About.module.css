@@ -1,0 +1,27 @@
+.about{
+    padding-left: 171px;
+    padding-right: 171px;
+    padding-top: 40px;
+}
+.bottom{
+    display: flex;
+}
+.left p{
+    padding-top: 20px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    color: #ABB2BF;
+    width: 75%;
+}
+.right{
+    width: 700px;
+}
+.about button{
+    padding: 8px 16px;
+    border: 1px solid #C778DD;
+    cursor: pointer;
+}
+.about button:hover{
+    background-color: #C778DD;
+    color: white;
+}
