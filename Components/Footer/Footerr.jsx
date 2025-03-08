@@ -31,7 +31,7 @@ function Footerr() {
         <p>Web designer and front-end developer based in Pakistan</p>
       </div>
       <div className={Style.copyright}>
-      &copy; Copyright 2022. Made by Mohsin
+      &copy; Copyright 2025. Made by Mohsin
       </div>
     </>
   );

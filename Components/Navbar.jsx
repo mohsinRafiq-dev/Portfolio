@@ -1,11 +1,12 @@
-// src/Components/Navbar.jsx
-import React, { useState } from "react";
-import Logo from "../Components/Logo.png";
+import React, { useEffect, useState } from "react";
+import Logo from "../Components/Footer/imgs/Logo (1).png";
 import Style from "../Components/Navbar.module.css";
 import Github from "../Components/Github.png";
 import Dribble from "../Components/Dribble.png";
 import Figma from "../Components/Figma.png";
-import Stroke from "../Components/Stroke.png";
+import { NavLink } from "react-router-dom";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 
 function Navbar() {
@@ -14,14 +15,20 @@ function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+  useEffect(()=>{
+   Aos.init(); 
+  })
 
   return (
     <>
-    <div className={Style.header}>
+    <div data-aos="flip-down"  className={Style.header}>
       <div className={Style.left}>
-        <div className="logo">
+        <div className={Style.logo}>
           <img src={Logo} alt="" />
-        </div>
+        </div >
         Mohsin
       </div>
       <div className={Style.right}>
@@ -29,18 +36,18 @@ function Navbar() {
           &#9776; 
         </button>
         <div className={`${Style.menuItems} ${isOpen ? Style.open : ''}`}>
-          <a className={Style.element} href="#home">
+          <NavLink activeClassName="active" onClick={closeMenu} className={Style.element} to="/">
             <span className={Style.span}>#</span>home
-          </a>
-          <a className={Style.element} href="#projects">
+          </NavLink>
+          <NavLink activeClassName="active" onClick={closeMenu} className={Style.element} to="/projects">
             <span className={Style.span}>#</span>projects
-          </a>
-          <a className={Style.element} href="#about-me">
+          </NavLink>
+          <NavLink activeClassName="active" onClick={closeMenu} className={Style.element} to="/about-me">
             <span className={Style.span}>#</span>about-me
-          </a>
-          <a className={Style.element} href="#contacts">
+          </NavLink>
+          <NavLink activeClassName="active" onClick={closeMenu} className={Style.element} to="/contacts">
             <span className={Style.span}>#</span>contacts
-          </a>
+          </NavLink>
           <div className={Style.socials}>
             <a className={Style.github} href="https://github.com/mohsinRafiq-dev?tab=repositories" target="blank"><img src={Github} alt="" /></a>
             <a className={Style.dribble} href="" target="blank"><img  src={Dribble} alt="" /></a>

@@ -7,7 +7,7 @@ function FirstSection() {
   return (
     <>
       <div className={Style.firstsection}>
-        <div className={Style.left}>
+        <div data-aos="zoom-in-right" className={Style.left}>
           <div className={Style.info}>
             <h1>
               Mohsin is a <span className={Style.span}> web designer </span> and{" "}
@@ -22,7 +22,7 @@ function FirstSection() {
           </div>
           <button className={Style.contactbtn}>Contact me!</button>
         </div>
-        <div className={Style.right}>
+        <div data-aos="zoom-in-left" className={Style.right}>
           <img src={Profile} alt="" />
           <div className="working bg-[#282C33]  items-center  fit-content justify-end">
             <div className="flex items-center gap-2 border justify-center px-2">
@@ -32,7 +32,7 @@ function FirstSection() {
           </div>
         </div>
       </div>
-      <div className={Style.quote}>
+      <div data-aos="fade-down" className={Style.quote}>
         <img src={Quote} alt="" />
       </div>
     </>

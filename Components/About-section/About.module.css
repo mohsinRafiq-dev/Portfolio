@@ -25,3 +25,26 @@
     background-color: #C778DD;
     color: white;
 }
+@media (max-width: 768px){
+    .about{
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+    }
+    .left p{
+        width: 100%;
+}
+.about button{
+    font-size: 14px;
+}
+.right{
+    width: 300px;
+}
+}

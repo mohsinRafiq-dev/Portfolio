@@ -44,3 +44,21 @@
     width: 18px;
     height: 16px;
 }
+@media (max-width: 768px){
+    .contacts{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .right p{
+       font-size: 14px;
+    }
+
+}
