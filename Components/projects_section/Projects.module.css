@@ -7,6 +7,12 @@
 #cards{
     padding-top: 40px;
 }
+#view:hover{
+    font-weight: 400;
+    transform: scale(1.1);
+    transition:  transform 0.5s;
+    color: white;
+}
 @media (max-width: 768px){
     #projects{
         padding-left: 20px;
@@ -23,5 +29,8 @@
     }
     #cards{
         padding-top: 40px;
+        display: flex;
+        justify-content: center;
     }
+
 }

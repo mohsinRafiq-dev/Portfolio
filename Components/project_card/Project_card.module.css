@@ -1,0 +1,15 @@
+
+#skills{
+    padding: 10px;
+}
+#disc{
+    padding-left: 10px;
+}
+#livebtn{
+    font-size: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#livebtn button{
+    padding: 2px 4px;
+}

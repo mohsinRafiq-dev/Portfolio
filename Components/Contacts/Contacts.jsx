@@ -21,7 +21,7 @@ function Contacts() {
         </div>
         <div className={Style.bottom}>
             <div className={Style.left}>
-                <p>I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</p>
+                <p>I'm open to freelance opportunities, but if you have any other requests or questions, feel free to reach out!</p>
             </div>
             <div className={Style.right}>
                 <div>

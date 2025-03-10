@@ -1,14 +1,20 @@
 import React from "react";
-import Style from "../Footer/Footerr.module.css"
-import Logo from "../Footer/imgs/Logo (1).png"
-import Github from "../Footer/imgs/vector (3).png"
-import Twitter from "../Footer/imgs/vector (4).png"
-import Link from "../Footer/imgs/vector (5).png"
+import Style from "../Footer/Footerr.module.css";
+import Logo from "../Footer/imgs/Logo (1).png";
+import Github from "../Footer/imgs/Github.svg";
+import Twitter from "../Footer/imgs/Twitter (1).svg";
+import Link from "../Footer/imgs/Linkedin (1).svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Footerr() {
   return (
     <>
-      <div className={Style.footer}>
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        className={Style.footer}
+      >
         <div className={Style.left}>
           <div className={Style.contain}>
             <img className={Style.logo} src={Logo} alt="" />
@@ -21,17 +27,24 @@ function Footerr() {
         <div className={Style.right}>
           <h1>Media</h1>
           <div className={Style.imgs}>
-            <a href=""><img src={Github} alt="" /></a>
-            <a href=""><img src={Twitter} alt="" /></a>
-            <a href=""><img src={Link} alt="" /></a>
+            <a href="">
+              <img src={Github} alt="" />
+            </a>
+            <a href="">
+              <img src={Twitter} alt="" />
+            </a>
+            <a href="">
+              <img src={Link} alt="" />
+            </a>
           </div>
         </div>
       </div>
-      <div className={Style.bottom}>
-        <p>Web designer and front-end developer based in Pakistan</p>
+      <div data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" className={Style.bottom}>
+        <p>Computer Science Student & Full-Stack Developer based in Pakistan</p>
       </div>
-      <div className={Style.copyright}>
-      &copy; Copyright 2025. Made by Mohsin
+      <div  className={Style.copyright}>
+        &copy; Copyright 2025. Made by Mohsin
       </div>
     </>
   );

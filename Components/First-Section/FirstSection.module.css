@@ -1,7 +1,7 @@
 .firstsection{
     background-color: #282C33;
     padding-left: 171px;
-    padding-top: 100px;
+    padding-top: 150px;
     display: flex;
     justify-content: space-between;
 }
@@ -13,16 +13,18 @@
     line-height: 42px;
     font-weight: 600;
 }
+
 .span{
     color: #C778DD;
-
 }
+
 .para{
-    padding-top: 20px;
+    padding-top: 30px;
     color: #ABB2BF;
-    font-size: 16px;
-    line-height: 25px;
-    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    width: 60%;
 }
 .contactbtn{
     padding: 8px 16px;
@@ -34,7 +36,8 @@
     color: white;
 }
 .right img{
-    width: 400px;
+    width: 300px;
+
 }
 .right{
     padding-right: 171px;
@@ -51,21 +54,37 @@
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 40px;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .info h1{
-        font-size: 25px;
+        font-size: 29px;
     }
     .para {
-        font-size: 11px;
+        font-size: 14px;
         padding-top: 10px;
+        width: 100%;
     }
     .left button{
         font-size: 14px;
     }
     .contactbtn button{
         font-size: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactbtn{
+        align-items: center;
     }
     .right{
         align-items: center;

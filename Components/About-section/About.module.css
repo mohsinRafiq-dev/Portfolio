@@ -25,7 +25,9 @@
     background-color: #C778DD;
     color: white;
 }
+
 @media (max-width: 768px){
+
     .about{
         padding-left: 20px;
         padding-right: 20px;
@@ -34,17 +36,23 @@
     .bottom{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .left {
         width: 100%;
+        align-items: center;
+        text-align: center;
     }
     .left p{
         width: 100%;
-}
-.about button{
+    }
+    .about button{
     font-size: 14px;
-}
-.right{
-    width: 300px;
-}
+    }
+    .right{
+    width: 350px;
+    padding-top: 20px;
+    }
+
 }

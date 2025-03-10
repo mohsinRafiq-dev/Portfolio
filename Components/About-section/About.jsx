@@ -1,6 +1,6 @@
 import React from 'react'
 import Style from './About.module.css'
-import Image from '../About-section/imgs/Group 50.png'
+import Image from '../First-Section/meee.png'
 
 function About() {
   return (
@@ -17,15 +17,15 @@ function About() {
         </div>
         <div className={Style.bottom}>
             <div className={Style.left}>
-                <p>Hello, i’m Mohsin!</p>
-                <p>I’m a self-taught front-end developer based in Islamabad, Pakistan. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. </p>
-                <p>Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.</p>
+                <p>Hello, I’m Mohsin!</p>
+                <p>I’m a self-taught full-stack developer and a Computer Science student based in Islamabad, Pakistan. I specialize in building responsive, user-friendly websites from scratch, transforming ideas into seamless digital experiences.</p>
+                <p>With expertise in both front-end and back-end development, I’ve been helping clients establish their online presence by crafting modern and efficient web solutions. Passionate about coding, I constantly explore the latest technologies and frameworks to enhance my skills and create innovative digital products.</p>
                 <div className="button">
                     <button>Read More -{'>'}</button>
                 </div>
             </div>
             <div className={Style.right}>
-                <img src={Image} alt="" />
+                <img src={Image} alt="My Picture" />
             </div>
         </div>
     </div>

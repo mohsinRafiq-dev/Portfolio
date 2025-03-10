@@ -3,6 +3,10 @@ import Style from "./Projects.module.css";
 import first from "./imgs/Rectangle 22.jpg";
 import second from "./imgs/Rectangle 22.png";
 import third from "./imgs/Rectangle 22 (1).png";
+import { NavLink } from "react-router-dom";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
 
 const Projects = () => {
   // date
@@ -37,10 +41,10 @@ const Projects = () => {
             </div>
             <div className="line w-2/3 h-px bg-[#C778DD]"></div>
           </div>
-          <div className=" text-white font-medium">
-            <a href="">
+          <div id={Style.view} data-aos="fade-down" className=" text-white font-medium">
+            <NavLink  to="/projects">
               <span>View all ~~&gt;</span>
-            </a>
+            </NavLink>
           </div>
         </div>
         <div id={Style.cards} className="flex flex-wrap justify-between gap-4 my-12">
