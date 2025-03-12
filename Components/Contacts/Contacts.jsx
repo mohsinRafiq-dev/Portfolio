@@ -1,8 +1,8 @@
 import React from "react";
 import Style from "./Contacts.module.css";
-import Discord from "./imgs/vector.png";
-import Mail from "./imgs/vector (1).png";
-import Link from "./imgs/vector (2).png";
+import Discord from "./imgs/Vector.png";
+import Mail from "./imgs/Vector (1).png";
+import Link from "./imgs/Vector (2).png";
 
 function Contacts() {
   return (
