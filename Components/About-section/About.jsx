@@ -25,7 +25,7 @@ function About() {
                 </div>
             </div>
             <div className={Style.right}>
-                <img src={Image} alt="My Picture" />
+                <img src={Image} alt="" />
             </div>
         </div>
     </div>

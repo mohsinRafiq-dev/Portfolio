@@ -5,7 +5,7 @@ const About_page = () => {
   return (
     <>
     <div className={Style.about}>
-        About
+  
     </div>
     </>
   )

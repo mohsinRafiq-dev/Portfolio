@@ -3,3 +3,21 @@
     padding-left: 171px;
     padding-right: 171px;
 }
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    padding-top: 50px;
+    width: 50%;
+}
+.right{
+    padding-top: 50px;
+}
+.messagebox{
+    border: 2px solid red;
+}
+.media{
+    padding-left: 171px;
+    padding-right: 171px;
+}

@@ -13,24 +13,25 @@
     transition:  transform 0.5s;
     color: white;
 }
-@media (max-width: 768px){
-    #projects{
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        align-items: center;
+@media (max-width: 768px) {
+    #projects {
+      padding: 20px; /* Reduced excessive padding */
+      text-align: center;
     }
-    .h1{
-        font-size: 25px;
+  
+    .h1 {
+      font-size: 22px;
     }
-    #projects a{
-        font-size: 12px;
+  
+    #projects a {
+      font-size: 14px;
     }
-    #cards{
-        padding-top: 40px;
-        display: flex;
-        justify-content: center;
+  
+    #cards {
+      display: flex;
+      flex-wrap: wrap; /* Ensures proper wrapping */
+      justify-content: center;
+      gap: 20px;
     }
-
-}
+  }
+  

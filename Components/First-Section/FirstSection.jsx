@@ -20,19 +20,17 @@ function FirstSection() {
   const typedref = useRef(null);
   useEffect(() => {
     const typed = new Typed(typedref.current, {
-      strings: [
-        "Full Stack Developer",
-        "Mobile App Developer",
-        "CS Student",
-      ],
-      typedSpeed: 0,
+      strings: ["Full Stack Developer", "Mobile App Developer", "CS Student"],
+      typeSpeed: 50,
       backSpeed: 50,
       loop: true,
     });
+  
     return () => {
       typed.destroy();
-    };
-  });
+    };
+  }, []); // <-- Add empty dependency array
+  
   return (
     <>
       <div className={Style.firstsection}>

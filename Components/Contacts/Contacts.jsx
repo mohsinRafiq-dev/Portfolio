@@ -20,10 +20,10 @@ function Contacts() {
           </div>
         </div>
         <div className={Style.bottom}>
-            <div className={Style.left}>
+            <div data-aos = "fade-right" className={Style.left}>
                 <p>I'm open to freelance opportunities, but if you have any other requests or questions, feel free to reach out!</p>
             </div>
-            <div className={Style.right}>
+            <div  className={Style.right}>
                 <div>
                     <h2>
                         Message me here
