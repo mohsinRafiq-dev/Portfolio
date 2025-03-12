@@ -6,6 +6,49 @@ const Projects_page = () => {
     <>
     <div className={Style.projects}>
         Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+        Projects
+
     </div>
     </>
   )
