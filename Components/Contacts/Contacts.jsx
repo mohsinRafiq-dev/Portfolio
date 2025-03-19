@@ -36,7 +36,7 @@ function Contacts({ contactRef }) {
             <div data-aos = "fade-right" className={Style.left}>
                 <p>I'm open to freelance opportunities, but if you have any other requests or questions, feel free to reach out!</p>
             </div>
-            <div  className={Style.right}>
+            <div data-aos="fade-up-left"  className={Style.right}>
                 <div>
                     <h2>
                         Message me here
@@ -64,7 +64,7 @@ function Contacts({ contactRef }) {
         </div>
       </div>
       <div className={Style.bottomm}>
-      <div className={Style.formContainer}>
+      <div data-aos="zoom-in-right" className={Style.formContainer}>
             <form onSubmit={handleSubmit}>
             <h2>Send a <span className="text-[#C778DD]">#</span>message</h2>
                 <label htmlFor="name"><span className="text-[#C778DD]">#</span>name</label>
@@ -102,7 +102,7 @@ function Contacts({ contactRef }) {
             </form>
         </div>
         <ToastContainer/>
-        <div className={Style.bottRight}>
+        <div data-aos="zoom-in-left" className={Style.bottRight}>
           <img src={Logos} alt="" />
         </div>
         </div>

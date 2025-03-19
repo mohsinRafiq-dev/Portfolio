@@ -16,7 +16,7 @@ function About() {
                     </div>
         </div>
         <div className={Style.bottom}>
-            <div className={Style.left}>
+            <div data-aos="zoom-in-right" className={Style.left}>
                 <p>Hello, I’m Mohsin!</p>
                 <p>I’m a self-taught full-stack developer and a Computer Science student based in Islamabad, Pakistan. I specialize in building responsive, user-friendly websites from scratch, transforming ideas into seamless digital experiences.</p>
                 <p>With expertise in both front-end and back-end development, I’ve been helping clients establish their online presence by crafting modern and efficient web solutions. Passionate about coding, I constantly explore the latest technologies and frameworks to enhance my skills and create innovative digital products.</p>
@@ -24,7 +24,7 @@ function About() {
                     <button>Read More -{'>'}</button>
                 </div>
             </div>
-            <div className={Style.right}>
+            <div data-aos="zoom-in-left" className={Style.right}>
                 <img src={Image} alt="" />
             </div>
         </div>
