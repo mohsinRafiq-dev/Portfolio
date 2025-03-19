@@ -1,7 +1,7 @@
 import React from 'react'
 import Style from './About.module.css'
 import Image from '../First-Section/meee.png'
-
+import { NavLink } from 'react-router-dom'
 function About() {
   return (
     <>
@@ -21,7 +21,7 @@ function About() {
                 <p>I’m a self-taught full-stack developer and a Computer Science student based in Islamabad, Pakistan. I specialize in building responsive, user-friendly websites from scratch, transforming ideas into seamless digital experiences.</p>
                 <p>With expertise in both front-end and back-end development, I’ve been helping clients establish their online presence by crafting modern and efficient web solutions. Passionate about coding, I constantly explore the latest technologies and frameworks to enhance my skills and create innovative digital products.</p>
                 <div className="button">
-                    <button>Read More -{'>'}</button>
+                    <button><NavLink to='/about-me'> Read More -{'>'}</NavLink></button>
                 </div>
             </div>
             <div data-aos="fade-up" className={Style.right}>
