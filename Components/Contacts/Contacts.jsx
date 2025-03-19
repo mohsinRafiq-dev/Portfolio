@@ -36,7 +36,7 @@ function Contacts({ contactRef }) {
             <div data-aos = "fade-right" className={Style.left}>
                 <p>I'm open to freelance opportunities, but if you have any other requests or questions, feel free to reach out!</p>
             </div>
-            <div data-aos="fade-up-left"  className={Style.right}>
+            <div data-aos = "fade-up"   className={Style.right}>
                 <div>
                     <h2>
                         Message me here
