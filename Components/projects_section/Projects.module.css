@@ -15,7 +15,7 @@
 }
 @media (max-width: 768px) {
     #projects {
-      padding: 20px; /* Reduced excessive padding */
+      padding: 20px; 
       text-align: center;
     }
   
@@ -29,7 +29,7 @@
   
     #cards {
       display: flex;
-      flex-wrap: wrap; /* Ensures proper wrapping */
+      flex-wrap: wrap; 
       justify-content: center;
       gap: 20px;
     }

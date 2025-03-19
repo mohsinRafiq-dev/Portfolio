@@ -1,32 +1,31 @@
 import Project_card from "../project_card/Project_card";
 import Style from "./Projects.module.css";
-import first from "./imgs/Rectangle 22.jpg";
-import second from "./imgs/Rectangle 22.png";
-import third from "./imgs/Rectangle 22 (1).png";
+import first from "./imgs/rock-paper-scissors-neon-icons-vector.jpg";
+import second from "./imgs/OIP.jpg";
+import third from "./imgs/text.jpg";
 import { NavLink } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Projects = () => {
-  // date
   const projects = [
     {
       img: first,
-      langs: ["html", "css", "javascript", "react", "tailwind css"],
-      title: "ChertNodes",
-      disc: "Minecraft servers hosting ",
+      langs: ["html", "css", "javascript"],
+      title: "Rock Paper Scissors",
+      disc: "Game ",
     },
     {
       img: second,
       langs: ["html", "css", "javascript", "Node.js"],
-      title: "ProtectX",
-      disc: "Discord anti-crash bot ",
+      title: "Amazon Clone",
+      disc: "Amazon Clone Website ",
     },
     {
       img: third,
-      langs: ["html", "css", "javascript", "Node.js", "python"],
-      title: "Kahoot Answers Viewer",
-      disc: "Get answers to your kahoot quiz ",
+      langs: ["html", "css", "javascript", "react.js",],
+      title: "Text Analyzer",
+      disc: "Text Analysis Tool",
     },
   ];
 

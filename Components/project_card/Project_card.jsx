@@ -2,9 +2,9 @@ import Style from '../project_card/Project_card.module.css'
 const Project_card = ({ img, langs, title, disc }) => {
   return (
     <>
-      <div data-aos="fade-up" data-aos-delay="300" className="border mx-auto w-full sm:w-[90%] md:w-[48%] lg:w-[30%] border-[#ABB2BF] p-0">
-        <div className="">
-          <img className=" w-full" src={img} alt="" />
+      <div id={Style.boxes} data-aos="fade-up" data-aos-delay="300" className="border mx-auto w-full sm:w-[90%] md:w-[48%] lg:w-[30%] border-[#ABB2BF] p-0">
+        <div className={Style.imgss}>
+          <img className="" src={img} alt="" />
         </div>
         <div id={Style.skills} className="flex gap-2 flex-wrap p-2 border-y border-[#ABB2BF]">
           {langs.map((e, index) => {

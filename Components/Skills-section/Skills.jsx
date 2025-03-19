@@ -6,34 +6,27 @@ function Skills() {
   const skills = [
     {
       title: "Languages",
-      languages: ["TypeScript", "Lua", "Python", "JavaScript"],
+      languages: ["JavaScript","C++", "Python"],
     },
-    { title: "Databases", languages: ["SQLite", "PostgreSQL", "Mongo"] },
+    { title: "Database", languages: ["SQLite", "PostgreSQL", "Mongo"] },
     {
       title: "Tools",
       languages: [
         "VSCode",
-        "Neovim",
-        "Linux",
+        "Jupyter",
+        "GitHub", 
         "Figma",
-        "XFCE",
-        "Arch",
-        "Git",
-        "Font Awesome",
       ],
     },
     {
       title: "Other",
-      languages: ["HTML", "CSS", "EJS", "SCSS", "REST", "Jinja"],
+      languages: ["HTML", "CSS", "Tailwind", "Bootstrap", "DSA", "Java"],
     },
     {
       title: "Frameworks",
       languages: [
-        "React",
-        "Vue",
-        "Disnake",
-        "Discord.js",
-        "Flask",
+        "React.js",
+        "TailwindCSS",
         "Express.js",
       ],
     },
@@ -60,12 +53,13 @@ function Skills() {
             <img className=" w-full mx-auto" src={Picture} alt="" />
           </div>
           <div
+          id={Style.boxes}
             data-aos="fade-right"
             className=" mx-auto flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-4"
           >
             {skills.map(({ title, languages }, skillIndex) => (
               <div
-                key={title} // ✅ Use the skill category title as a key (safer than index)
+                key={title} 
                 className={`${Style.boxes} w-[90%] sm:w-[45%] lg:w-[30%] border border-[#ABB2BF]`}
               >
                 <div className={Style.title}>

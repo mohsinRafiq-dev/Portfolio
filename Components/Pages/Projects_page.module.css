@@ -3,3 +3,48 @@
     padding-left: 171px;
     padding-right: 171px;
 }
+.heading h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+.heading p{
+    font-size: 16px;
+    color: #ABB2BF;
+}
+.heading{
+    padding-bottom: 60px;
+}
+.complete{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.small{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .projects {
+      padding: 0px 20px; 
+      padding-top: 100px;
+    }
+   
+    .heading h1 {
+      font-size: 25px;
+    }
+   
+    .heading p {
+      font-size: 14px;
+    }
+   
+    .complete {
+      font-size: 20px;
+    }
+   
+    .small {
+      font-size: 20px;
+    }
+  }

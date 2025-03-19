@@ -15,7 +15,16 @@
     padding-top: 50px;
 }
 .messagebox{
-    border: 2px solid red;
+    border: 1px solid #ABB2BF;
+}
+.messagebox h2{
+    padding: 4px 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.imgs{
+    padding: 4px 8px;
+    font-size: 20px;
 }
 .media{
     padding-left: 171px;

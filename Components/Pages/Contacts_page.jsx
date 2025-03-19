@@ -1,12 +1,13 @@
+import { AiOutlineInstagram } from "react-icons/ai"; 
+import { AiFillFacebook } from "react-icons/ai"; 
 import React from 'react'
 import Style from '../Pages/Contacts_page.module.css'
-import moduleName from 'module'
 
 const Contacts_page = () => {
   return (
     <>
     <div className={Style.contacts}>
-      <div className="top">
+      <div className={Style.top}>
       <h1><span className='text-[#C778DD]'>/</span>Contacts</h1>
       <p>My contacts</p>
       </div>
@@ -16,10 +17,10 @@ const Contacts_page = () => {
         </div>
         <div className={Style.right}>
           <div className={Style.messagebox}>
-            <h2>Message me here</h2>
+            <h2 className="border-b-1 border-[#ABB2BF]">Message me here</h2>
             <div className={Style.imgs}>
-            <a href=""><img src={""} alt="" />MadMax</a>
-            <a href=""><img src={""} alt="" />Madmax</a>
+            <a className="flex items-center gap-[5px]" href=""><AiFillFacebook/>MadMax</a>
+            <a className="flex items-center gap-[5px]" href=""><AiOutlineInstagram />Madmax</a>
             </div>
           </div>
         </div>
