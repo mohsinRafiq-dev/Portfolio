@@ -102,7 +102,7 @@ function Contacts({ contactRef }) {
             </form>
         </div>
         <ToastContainer/>
-        <div data-aos="zoom-in-left" className={Style.bottRight}>
+        <div data-aos="fade-up" className={Style.bottRight}>
           <img src={Logos} alt="" />
         </div>
         </div>
