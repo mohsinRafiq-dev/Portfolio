@@ -14,23 +14,34 @@ const RouteChangeHandler = () => {
   const location = useLocation();
 
   useEffect(() => {
-    NProgress.start(); 
+    NProgress.start();
     setTimeout(() => {
-      NProgress.done(); 
-    }, 50); 
+      NProgress.done();
+    }, 50);
 
     return () => {
-      NProgress.done(); 
+      NProgress.done();
     };
-  }, [location.path]); 
+  }, [location.pathname]);
 
-  return null; 
+  return null;
+};
+
+const ScrollToTopOnRefresh = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" }); 
+    }, 100); 
+  }, []);
+
+  return null;
 };
 
 function App() {
   return (
     <BrowserRouter>
       <RouteChangeHandler />
+      <ScrollToTopOnRefresh /> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Home_page />} />

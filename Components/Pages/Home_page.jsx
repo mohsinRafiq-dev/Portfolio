@@ -6,13 +6,29 @@ import About from '../About-section/About'
 import Contacts from '../Contacts/Contacts'
 
 const Home_page = () => {
-  const contactRef = useRef(null); 
+  useEffect(() => {
+    if (performance.getEntriesByType("navigation")[0]?.type === "reload") {
+      window.scrollTo(0, 0);
+    }
+  }, []);
+  const contactRef = useRef(null);
+
   const scrollToContact = () => {
-    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (contactRef.current) {
+      const headerOffset = 70;
+      const elementPosition = contactRef.current.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   };
-  useEffect(()=>{
-    window.scrollTo(0,0);
-  },[])
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" }); 
+  }, []);
   return (
     <>
     <FirstSection scrollToContact={scrollToContact}/>
