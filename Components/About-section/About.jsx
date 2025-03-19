@@ -24,7 +24,7 @@ function About() {
                     <button>Read More -{'>'}</button>
                 </div>
             </div>
-            <div data-aos="zoom-in-left" className={Style.right}>
+            <div data-aos="fade-up" className={Style.right}>
                 <img src={Image} alt="" />
             </div>
         </div>
