@@ -3,12 +3,20 @@
     padding-left: 171px;
     padding-right: 171px;
 }
+.top h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+.top p{
+    color: #ABB2BF;
+
+}
 .bottom{
     display: flex;
     justify-content: space-between;
 }
 .left{
-    padding-top: 50px;
+    padding-top: 60px;
     width: 50%;
 }
 .right{
@@ -29,4 +37,35 @@
 .media{
     padding-left: 171px;
     padding-right: 171px;
+}
+.media h1{
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 40px;
+}
+@media (max-width: 768px){
+    .contacts{
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    .top h1{
+        font-size: 25px;
+    }
+    .top p{
+        font-size: 16px;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        padding-top: 20px;
+    }
+    .media{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bottom{
+        flex-direction: column;
+    }
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Style from  '../Pages/Projects_page.module.css'
 import Project_card from '../project_card/Project_card'
 import first from "../projects_section/imgs/rock-paper-scissors-neon-icons-vector.jpg";
@@ -7,6 +7,9 @@ import third from "../projects_section/imgs/text.jpg";
 import Fourth from "../projects_section/imgs/portfolio.png";
 
 const Projects_page = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
    const projects = [
       {
         img: first,

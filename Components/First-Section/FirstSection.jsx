@@ -16,7 +16,7 @@ const HoverZoomImage = ({ src, alt }) => {
   );
 };
 
-function FirstSection() {
+function FirstSection({ scrollToContact }) {
   const typedref = useRef(null);
   useEffect(() => {
     const typed = new Typed(typedref.current, {
@@ -29,7 +29,7 @@ function FirstSection() {
     return () => {
       typed.destroy();
     };
-  }, []); // <-- Add empty dependency array
+  }, []);
   
   return (
     <>
@@ -46,7 +46,7 @@ function FirstSection() {
             "I create dynamic, responsive websites where innovation meets design."
             </p>
           </div>
-          <button className={Style.contactbtn}>Contact me!</button>
+          <button onClick={scrollToContact} className={Style.contactbtn}>Contact me!</button>
         </div>
         <div data-aos="zoom-in-left" className={Style.right}>
           <HoverZoomImage src={Profile} alt="My Picture" />

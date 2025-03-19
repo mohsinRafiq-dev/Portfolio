@@ -9,3 +9,23 @@ body{
     background: #282C33;
     color: white;
 }
+.Toastify__toast {
+    background-color: #3c4e67 ; 
+    color: #ffffff ; 
+    border-radius: 8px ;
+    padding: 12px 16px ;
+  }
+  
+  .Toastify__toast-body {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .Toastify__progress-bar {
+    background-color: #C778DD;
+  }
+  .Toastify__toast-icon svg {
+    fill: #C778DD  !important;
+    width: 24px !important; 
+    height: 24px !important;
+  }

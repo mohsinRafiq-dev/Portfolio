@@ -28,10 +28,13 @@
     padding: 8px 16px;
     border: 1px solid #C778DD;
     cursor: pointer;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+    box-shadow: 0 0 10px #C778DD
 }
 .about button:hover{
-    background-color: #C778DD;
     color: white;
+    transform: translateY(-3px);
+    background-color: #C778DD33;
 }
 
 @media (max-width: 768px) {

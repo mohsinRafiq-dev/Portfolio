@@ -32,19 +32,94 @@
     align-items: center;
     padding-top: 2px;
     color: #ABB2BF;
-
 }
 .socials a:hover {
     font-weight: 400;
     color: white;
     transform: scale(1.05);
     transition:  transform 0.5s;
-  }
+}
 .socials a img{
     width: 18px;
     height: 16px;
 }
-@media (max-width: 768px){
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+form {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #C778DD;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ABB2BF;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #C778DD;
+    outline: none;
+    box-shadow: 0 0 5px #C778DD;
+}
+
+.btn{
+    padding: 8px 16px;
+    border: 1px solid #C778DD;
+    cursor: pointer;
+    box-shadow: 0 0 10px #C778DD
+}
+
+.btn:hover {
+
+    color: white;   
+}
+.btn {
+    padding: 8px 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #C778DD33;
+}
+input::placeholder, textarea::placeholder {
+    color: #ABB2BF;
+}
+.bottomm{
+    display: flex;
+    padding-left: 171px;
+    padding-right: 171px;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+.bottRight {
+padding-top: 50px;
+}
+@media (max-width: 768px) {
+    .form {
+        padding: 20px;
+    }
     .contacts{
         padding-left: 20px;
         padding-right: 20px;
@@ -58,8 +133,31 @@
         width: 100%;
         text-align: center;
     }
+    .right{
+        text-align: center;
+    }
     .right p{
        font-size: 14px;
+    }
+    .bottomm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .formContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
 }
