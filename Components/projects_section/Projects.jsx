@@ -33,7 +33,7 @@ const Projects = () => {
     <>
       <div
         id={Style.projects}
-        className="px-5 max-w-[1560px] mx-auto mt-20 py-10 bg-[#282C33]"
+        className="px-5 mx-auto mt-20 py-10 bg-[#282C33]"
       >
         <div
           id={Style.line}

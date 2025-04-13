@@ -35,7 +35,7 @@ function Skills() {
     <>
       <div
         id={Style.skills}
-        className="px-5 max-w-[1560px] mx-auto mt-20 py-10"
+        className="px-5 mx-auto mt-20 py-10"
       >
         <div data-aos="fade-right" className=" mb-10">
           <div className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
