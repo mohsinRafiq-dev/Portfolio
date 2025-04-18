@@ -7,7 +7,7 @@ const About_page = () => {
   return (
     <>
     <div className={`${Style.about} flex`}>
-    <FaInstagram className='text-9xl text-[magenta]' />
+    <FaInstagram className='text-9xl text-[magenta] ' />
     <BsFacebook className="text-9xl text-[magenta]" />
     </div>
     </>

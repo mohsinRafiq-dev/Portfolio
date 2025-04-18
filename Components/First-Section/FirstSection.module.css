@@ -50,6 +50,38 @@
     justify-content: center;
     padding-top: 100px;
 }
+.resumeheading{
+    color: #C778DD;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.crossbtn{
+  padding-top: px;
+  font-size: 25px;
+
+}
+.crossbtn:hover{
+  transition: background 0.3s, transform 0.2s ease-in-out;
+    transform: translateY(-3px);
+}
+.resume{
+    border: 1px solid #C778DD;
+    box-shadow: 0 0 10px #C778DD
+}
+.resumebtns a{
+  padding: 8px 16px;
+  border: 1px solid #C778DD;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+  box-shadow: 0 0 10px #C778DD
+}
+.resumebtns a:hover{
+  background-color: #C778DD33;
+  color: white;
+  transform: translateY(-3px);
+}
 
 @media (max-width: 768px) {
     .firstsection {

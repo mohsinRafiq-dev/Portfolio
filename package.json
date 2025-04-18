@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.9",
     "aos": "^2.3.4",
+    "framer-motion": "^12.7.4",
     "motion": "^12.4.10",
     "nprogress": "^0.2.0",
     "react": "^19.0.0",

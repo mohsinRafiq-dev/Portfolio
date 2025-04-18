@@ -23,7 +23,7 @@ const Projects = () => {
     },
     {
       img: third,
-      langs: ["html", "css", "javascript", "react.js",],
+      langs: ["html", "css", "javascript", "react.js"],
       title: "Text Analyzer",
       disc: "Text Analysis Tool",
     },
