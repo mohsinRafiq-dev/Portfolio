@@ -104,7 +104,7 @@ function FirstSection({ scrollToContact }) {
 
               <div className={`${Style.resumebtns} flex justify-center gap-4`}>
                 <a
-                  href="https://drive.google.com/file/d/1oWOnwEy2C-WXA7qVEB_NXQAAV6fB5gcQ/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1oWOnwEy2C-WXA7qVEB_NXQAAV6fB5gcQ/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   type="application/pdf"
