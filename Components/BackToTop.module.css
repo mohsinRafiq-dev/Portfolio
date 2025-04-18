@@ -1,0 +1,18 @@
+.backtotop {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    border: 1px solid #c778dd;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #c778dd;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  .backtotop:hover {
+    background-color: #9e5bb8;
+  }
+  

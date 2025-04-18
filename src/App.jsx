@@ -9,6 +9,8 @@ import Home_page from "../Components/Pages/Home_page";
 import Projects_page from "../Components/Pages/Projects_page";
 import About_page from "../Components/Pages/About_page";
 import Contacts_page from "../Components/Pages/Contacts_page";
+import BackToTop from "../Components/BackToTop";
+
 
 const RouteChangeHandler = () => {
   const location = useLocation();
@@ -40,16 +42,17 @@ const ScrollToTopOnRefresh = () => {
 function App() {
   return (
     <BrowserRouter>
-      <RouteChangeHandler />
+      <RouteChangeHandler/>
       <ScrollToTopOnRefresh /> 
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home_page />} />
         <Route path="/projects" element={<Projects_page />} />
         <Route path="/about-me" element={<About_page />} />
         <Route path="/contacts" element={<Contacts_page />} />
       </Routes>
-      <Footerr />
+      <BackToTop/>
+      <Footerr/>
     </BrowserRouter>
   );
 }
