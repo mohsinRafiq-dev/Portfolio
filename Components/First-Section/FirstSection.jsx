@@ -41,8 +41,7 @@ function FirstSection({ scrollToContact }) {
           <div className={Style.info}>
             <h1>
               Welcome to my <span className={Style.span}> Portfolio</span>
-              <br />
-              I am a{" "}
+              <br />I am a{" "}
               <span className={Style.span}>
                 <span ref={typedref} />
               </span>
@@ -81,21 +80,19 @@ function FirstSection({ scrollToContact }) {
       <div data-aos="fade-down" className={Style.quote}>
         <img src={Quote} alt="" />
       </div>
-
-      {/* Resume Modal */}
       <AnimatePresence>
         {showResumeModal && (
           <div className="fixed inset-0 z-50 backdrop-blur-sm bg-black/10 flex items-center justify-center">
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 30 }}
-                  transition={{
-                    duration: 0.25,
-                    ease: "easeInOut",
-                  }}
-                  className={`${Style.resume} relative text-white text-center w-[90%] max-w-sm p-6 rounded-xl shadow-[0_0_10px_#C778DD] border border-[#C778DD]  `}
-                >
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 30 }}
+              transition={{
+                duration: 0.25,
+                ease: "easeInOut",
+              }}
+              className={`${Style.resume} relative text-white text-center w-[90%] max-w-sm p-6 rounded-xl shadow-[0_0_10px_#C778DD] border border-[#C778DD]  `}
+            >
               <button
                 onClick={() => setShowResumeModal(false)}
                 className={`${Style.crossbtn} absolute top-2 right-2 text-gray-400 hover:text-[#C778DD]`}
@@ -103,28 +100,26 @@ function FirstSection({ scrollToContact }) {
                 <FiX />
               </button>
 
-              <h2 className={`${Style.resumeheading}`}>
-                Resume
-              </h2>
+              <h2 className={`${Style.resumeheading}`}>Resume</h2>
 
               <div className={`${Style.resumebtns} flex justify-center gap-4`}>
-              <a
-  href="https://drive.google.com/file/d/1oWOnwEy2C-WXA7qVEB_NXQAAV6fB5gcQ/view?usp=drive_link"
-  target="_blank"
-  rel="noopener noreferrer"
-  type="application/pdf"
-  className="px-5 py-2 flex items-center justify-center gap-2 transition"
->
-  <FiEye /> <span>View</span>
-</a>
-  <a
-    href="/Mohsin Rafiq Resume.pdf"  
-    download                    
-    className="px-5 py-2 flex items-center justify-center gap-2 transition"
-  >
-    <FiDownload /> <span>Download</span>
-  </a>
-</div>
+                <a
+                  href="https://drive.google.com/file/d/1oWOnwEy2C-WXA7qVEB_NXQAAV6fB5gcQ/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  type="application/pdf"
+                  className="px-5 py-2 flex items-center justify-center gap-2 transition"
+                >
+                  <FiEye /> <span>View</span>
+                </a>
+                <a
+                  href="/Mohsin Rafiq Resume.pdf"
+                  download
+                  className="px-5 py-2 flex items-center justify-center gap-2 transition"
+                >
+                  <FiDownload /> <span>Download</span>
+                </a>
+              </div>
             </motion.div>
           </div>
         )}
