@@ -4,6 +4,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import React, {useRef, useState} from "react";
 import Style from "./Contacts.module.css";
 import {ToastContainer, toast} from 'react-toastify';
+import emailjs from "@emailjs/browser";
 import Logos from "../Contacts/imgs/Logos.png";
 
 function Contacts({ contactRef }) {
@@ -13,10 +14,24 @@ function Contacts({ contactRef }) {
       setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   
-  const handleSubmit = (e) => {
-      e.preventDefault();
-      toast.success("Message sent successfully");
+  const form = useRef();
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+  
+    emailjs.sendForm(
+      'service_jjqxizg',     
+      'template_6inunap',    
+      form.current,
+      '_of7WT1sbJK6jsZ4M'      
+    )
+    .then((result) => {
+      toast.success("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
+    }, (error) => {
+      toast.error("Failed to send message. Please try again.");
+    });
+  
+    e.target.reset();  
   };
   return (
     <>
@@ -65,7 +80,7 @@ function Contacts({ contactRef }) {
       </div>
       <div className={Style.bottomm}>
       <div data-aos="zoom-in-right" className={Style.formContainer}>
-            <form onSubmit={handleSubmit}>
+      <form ref={form} onSubmit={handleFormSubmit}>
             <h2>Send a <span className="text-[#C778DD]">#</span>message</h2>
                 <label htmlFor="name"><span className="text-[#C778DD]">#</span>name</label>
                 <input

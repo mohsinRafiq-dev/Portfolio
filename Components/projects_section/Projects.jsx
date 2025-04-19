@@ -4,7 +4,7 @@ import first from "./imgs/rock-paper-scissors-neon-icons-vector.jpg";
 import second from "./imgs/OIP.jpg";
 import third from "./imgs/text.jpg";
 import { NavLink } from "react-router-dom";
-import Aos from "aos";
+
 import "aos/dist/aos.css";
 
 const Projects = () => {
@@ -14,6 +14,7 @@ const Projects = () => {
       langs: ["html", "css", "javascript"],
       title: "Rock Paper Scissors",
       disc: "Game ",
+      liveLink: "https://madmax-eng.github.io/Rock-Paper-Scissors-Game/",
     },
     {
       img: second,
@@ -62,13 +63,14 @@ const Projects = () => {
           id={Style.cards}
           className="flex flex-wrap justify-between gap-4 my-12"
         >
-          {projects.map(({ img, langs, title, disc }, index) => (
+          {projects.map(({ img, langs, title, disc,liveLink }, index) => (
             <Project_card
               key={title}
               img={img}
               langs={langs}
               title={title}
               disc={disc}
+              liveLink={liveLink}
             />
           ))}
         </div>

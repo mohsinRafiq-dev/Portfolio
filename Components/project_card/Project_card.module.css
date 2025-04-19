@@ -1,6 +1,13 @@
+#boxes{
+  box-shadow: 0 0 5px black;
+}
 #boxes img{
 width: 100%;
-height: 300px;
+overflow: hidden;
+border-radius: 8px;
+height: 200px;      
+object-fit: cover;  
+border-radius: 8px;
 }
 #skills{
     padding: 10px;
@@ -9,12 +16,22 @@ height: 300px;
     padding-left: 10px;
 }
 #livebtn{
-    font-size: 19px;
+    font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
-#livebtn button{
+#livebtn a{
     padding: 2px 4px;
+    box-shadow: 0 0 5px #C778DD;
+}
+#livebtn a:hover{
+    font-weight: 400;
+    transform: scale(1.05);
+    transition:  transform 0.5s;
+    color: white; 
+    cursor: pointer;
+
 }
 .imgss img{
 width: 100%;
